@@ -16,7 +16,6 @@ This directory contains the configuration for deploying [Temporal](https://tempo
 
 - Access to a GKE cluster (`kubectl` configured)
 - [Helm 3+](https://helm.sh/docs/intro/install/) installed
-- PostgreSQL database (deployed via Helm)
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) installed
 
 ## Installation

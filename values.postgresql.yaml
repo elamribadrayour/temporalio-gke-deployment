@@ -1,0 +1,14 @@
+auth:
+  existingSecret: temporal-postgresql-secret
+  username: temporal
+  database: temporal
+
+primary:
+  persistence:
+    enabled: true
+    size: 8Gi
+
+initdbScripts:
+  create-visibility-db.sql: |
+    CREATE DATABASE temporal_visibility;
+    GRANT ALL PRIVILEGES ON DATABASE temporal_visibility TO temporal; 
